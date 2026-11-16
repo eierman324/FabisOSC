@@ -1,0 +1,11 @@
+.gradle/
+build/
+.idea/
+*.iml
+server/*
+!server/start.bat
+fabric/run/
+
+# Lokale Claude-Einstellungen und Logs
+.claude/settings.local.json
+*.log

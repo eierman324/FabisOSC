@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "fabisosc",
+  "version": "${version}",
+  "name": "FabisOSC",
+  "description": "Orbital Strike Cannon als Angel - Stab und Nuke. Laeuft nur auf der Server-Seite, also auch in Einzelspieler-Welten.",
+  "authors": ["Felix"],
+  "license": "All-Rights-Reserved",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["de.fabisosc.fabric.FabisOscMod"]
+  },
+  "mixins": ["fabisosc.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.20.1",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}

@@ -1,0 +1,45 @@
+# FabisOSC - Orbital Strike Cannon
+
+# Maximale Entfernung zum Zielblock auf X und Z (Y ist egal)
+range: 256
+
+# Wartezeit zwischen zwei Schuessen pro Spieler (Sekunden)
+cooldown-seconds: 3
+
+# Wie hoch ueber dem Ziel das TNT startet (wie im Buch: +100)
+drop-height: 100
+
+# Sollen zerstoerte Bloecke als Items droppen? (false = deutlich weniger Lag)
+drop-items: false
+
+stab:
+  # TNT pro Bohr-Schicht (mehr = breiteres Loch)
+  tnt-per-layer: 12
+  # Abstand zwischen zwei Schichten in Bloecken
+  layer-step: 3
+  # Wie viele Schichten pro Tick gezuendet werden (mehr = schneller)
+  layers-per-tick: 1
+
+nuke:
+  # Ablauf: Ein TNT faellt Richtung Ziel. Unterwegs knallt eine grosse Explosion,
+  # die das TNT in Ringe nach aussen sprengt. Am Boden liegt es kurz, dann knallt es.
+
+  # Ringe, wenn bei /osc give nichts angegeben ist (linker Dropper im Buch)
+  default-rings: 8
+  max-rings: 20
+  # Abstand zwischen zwei Ringen in Bloecken
+  ring-spacing: 4
+  # Abstand zwischen zwei TNT-Einschlaegen auf einem Ring
+  point-spacing: 3
+  # TNT pro Einschlagpunkt
+  tnt-per-point: 2
+  # Nach welchem Anteil der Fallhoehe sich das TNT teilt (0.6 = nach 60 %)
+  split-at: 0.6
+  # Staerke der Explosion beim Teilen (normales TNT = 4, 0 = keine Explosion)
+  split-power: 16
+  # Jedes weggesprengte TNT landet so viele Bloecke in zufaelliger Richtung versetzt (Prime Momentum)
+  prime-offset: 0.2
+  # Wie viele Ticks das TNT am Boden liegt, bevor es explodiert
+  ground-ticks: 5
+  # Zusaetzlich ein Einschlag genau in der Mitte
+  center-hit: true

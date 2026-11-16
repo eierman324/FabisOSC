@@ -1,0 +1,16 @@
+name: FabisOSC
+version: '${version}'
+main: de.fabisosc.FabisOSC
+api-version: '26.1'
+description: Orbital Strike Cannon als Angel - Stab und Nuke ohne Mods.
+authors: [Felix]
+
+permissions:
+  fabisosc.use:
+    description: Die OSC-Angel benutzen und umstellen
+    default: op
+  fabisosc.admin:
+    description: /osc give und /osc reload
+    default: op
+    children:
+      fabisosc.use: true
